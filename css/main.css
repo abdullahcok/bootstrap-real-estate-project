@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css?family=Mali");
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainGreen: #61e786;
+  --mainBlack: #000;
+  --mainDark: #2d2d2d;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: #eee;
+}
+
+.height90{
+  min-height: 105vh;
+}
+
+body {
+  font-family: "Mali", cursive;
+  background: var(--pureWhite);
+  color: var(--mainBlack);
+}
+
+/************ global **/
+.text-green{
+  color: var(--mainGreen);
+}
+.text-slant{
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+}
+.green__btn{
+  color: var(--mainGreen);
+  border: 0.1rem solid var(--mainGreen);
+  background: var(--mainDark);
+  font-size: 1.2rem;
+}
+.green__btn:hover{
+  color: var(--mainWhite);
+  border: 0.1rem solid var(--mainGreen);
+}
+.green2__btn{
+  color: var(--mainGreen);
+  border: 0.1rem solid var(--mainGreen);
+  font-size: 1.2rem;
+}
+.green2__btn:hover{
+  color: var(--mainDark);
+  border: 0.1rem solid var(--mainDark);
+}
+
+
+
+
+/************header ***/
+.info-icon{
+  color: var(--mainGreen);
+  font-size:1.2rem;
+}
+.info-icon:hover{
+  color: var(--mainWhite);
+}
+.info-icon .phone{
+  padding: 8px;
+  border: 2px solid var(--mainGreen);
+  border-radius: 50%;
+}
+
+/****************** navbar **/
+.navbar{
+  background: var(--mainDark);
+}
+
+.navbar-toggler{
+  outline: none!important;
+}
+
+.toggler-btn {
+  padding: 5px;
+}
+
+.nav-link{
+  font-size: 1.4rem;
+  color: var(--mainGreen);
+  transition: all 1s ease-out;
+}
+
+.nav-link:hover{
+  font-size: 1.2rem;
+  color: var(--mainWhite);
+}
+
+
+/********************* bar **/
+
+.bar {
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+  background: var(--mainGreen);
+  transition: all 0.5s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+/********** banner **/
+.banner-info{
+  min-height: calc(100vh-101px);
+  background: var(--mainGrey);
+}
+
+.banner-info__footer{
+  background: var(--mainGreen);
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 100%;
+}
+
+.banner-img{
+    min-height: 86vh;
+    background: url('../img/banner.jpeg')
+    center/cover fixed no-repeat;
+    /*background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    position: relative;
+}
+.banner-img__footer{
+  background: var(--mainDark);
+  color: var(--mainGreen);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 13.5vh;
+  align-items: center;
+}
+
+
+/******** about info ***/
+.title-underline{
+  width: 15rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2rem;
+}
+.title-underline__center{
+  position: absolute;
+  height: 0.6rem;
+  background: var(--mainGreen);
+  width: 50%;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+.blockquote{
+  border-left: 0.5rem solid var(--mainGreen);
+}
+
+/************** about img ******/
+.img-container{
+  position: relative;
+}
+
+.featured-icons{
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+}
+.featured-icon{
+  background: var(--mainGreen);
+  padding: .2rem;
+  display: inline-block;
+  color: var(--mainWhite);
+}
+
+
+/************** featured ********/
+.featured{
+  background: var(--mainGrey);
+}
+
+/************ contact *******/
+.contact{
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.contact-btn{
+  background: transparent;
+  border: 0.1rem solid var(--mainWhite);
+  color: var(--mainWhite);
+}
+.contact-btn:hover{
+  background: var(--mainWhite);
+  color: var(--mainGreen);
+}
+
+
+/******** services *******/
+.services, .tour{
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                          url("../img/services-bg.jpeg")
+                          bottom/cover fixed no-repeat;
+}
+
+.services-info-text{
+  color: var(--mainDark) !important;
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%);
+  background: var(--mainGreen);
+  margin-bottom: 0;
+  text-decoration: none;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.services-info-text:hover{
+  color: var(--mainGreen) !important;
+  background: var(--mainDark);
+  text-decoration: none;
+}
+
+.service-icon{
+  font-size: 2rem;
+  color: var(--mainGreen);
+  padding: .5rem;
+  border: .1rem solid var(--mainGreen);
+  margin-right: 1rem;
+  transition: all 1s ease-in-out;
+}
+.service-icon:hover{
+  background: var(--mainGreen);
+  color: var(--mainGrey);
+}
+
+.service-link{
+  font-size: 0.8rem;
+  color: var(--mainGreen);
+  padding: .5rem;
+  margin-right: 1rem;
+  transition: all 1s ease-in-out;
+}
+.service-link:hover{
+  font-size: 0.8rem;
+  color: var(--mainWhite);
+  padding: .5rem;
+  margin-right: 1rem;
+  transition: all 1s ease-in-out;
+  text-decoration: none;
+}
+
+
+/************ gallery **********/
+.gallery-btn:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.gallery-img-container {
+  position: relative;
+  transition: all 1s linear;
+  overflow: hidden;
+}
+.gallery-img-container:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+.gallery-img {
+  transition: all 1s linear;
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.3;
+}
+
+
+.gallery-info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background: var(--mainGreen);
+  color: var(--mainDark);
+  text-decoration: none;
+  transition: all 0.3s linear;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.gallery-info:hover {
+  text-decoration: none;
+  color: var(--mainGreen);
+  background: var(--mainDark);
+}
+
+.gallery-img-container:hover .gallery-info {
+  transform: translate(-50%, 0);
+}
+.gallery-icon {
+  position: absolute;
+  color: var(--mainGrey);
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+    color: var(--mainDark);
+}
+
+.g-icon{
+    color: var(--mainGreen);
+}
+.g-icon:hover{
+    color: var(--mainDark);
+}
+
+/************** tour *********/
+.tour-icon{
+  color: var(--mainGreen);
+  margin-bottom: 1rem;
+  padding: .75rem;
+  background: var(--mainDark);
+  border-radius: 30%;
+  font-size: 25px;
+  cursor:pointer;
+  transition: all 1s linear;
+  max-height: 100vh;
+}
+.tour-icon:hover{
+  background: var(--mainGreen);
+  color:var(--mainDark);
+}
+
+.tour-video{
+  left:0;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                          url("../img/services-bg.jpeg")
+                          bottom/cover fixed no-repeat;
+}
+
+
+
+/************* footer ***********/
+.footer{
+  background: var(--mainDark);
+}
